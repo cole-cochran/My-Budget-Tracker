@@ -1,5 +1,6 @@
 let db;
 let budgetVersion;
+const { saveRecord } = require("./db");
 
 // Create a new db request for a "budget" database.
 const request = indexedDB.open('BudgetDB', budgetVersion || 21);
